@@ -1,0 +1,49 @@
+package Labtest;
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Method1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	Scanner sc = new Scanner (System.in);
+
+		int num[] = {10, 15, 9, 5};
+		int i =0;
+		
+			System.out.println("Enter element number: ");
+			num[i] = sc.nextInt();
+		
+Arrays.sort(num);
+		
+		System.out.println("Arrange element number: ");
+		for(int a = 0; a<num.length; a++)
+		{
+			System.out.println(num[a]);
+		}
+		
+		if(arrayelement(num)) {
+			System.out.println("num" + 2);
+		}
+		else
+		{
+			System.out.println("num " + 4); }
+			}
+		public static boolean arrayelement (int num[]) {
+		
+				for(int x = 0; x <num.length; x++)
+					if( num [x] == x) {
+					return true;
+					}
+		
+		
+		return false;
+	}
+	
+	}
+		
+	
+
+
