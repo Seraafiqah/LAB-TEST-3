@@ -1,0 +1,46 @@
+package Labtest;
+
+import java.util.Scanner;
+
+public class Method2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter your word: ");
+        String str[]=sc.nextLine().split(" ");
+        
+		 int wordlength=str.length;
+	     int repeation=0;
+	     
+	        for(int z=0;z<wordlength;z++)
+	        {
+	            for(int y=(z+1);y<wordlength;y++)
+	            {
+	                if((str[y]).equals(str[z]))
+	                {
+	                    System.out.println("Words Repeating:" + str[y]);
+	                    repeation++;
+	                    int wordcounting=0;
+	                    for (int x=0; x<wordlength-1;x++) {
+	                    	if(str.length==' ' && str.length != ' ') {
+	                    		wordcounting++;
+	                    		
+	                    	}
+	                    	;
+	                    }
+	                    break;
+	                }
+	            }
+	        }
+	        if(repeation==0)
+	        {
+	            System.out.println("No repetition");
+	        }
+	        System.out.println("Word counting:" + str.length);
+		
+		}
+	}
+
+
